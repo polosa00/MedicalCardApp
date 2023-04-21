@@ -44,7 +44,6 @@
 		111823B729ED2B640025B787 = {
 			isa = PBXGroup;
 			children = (
-				113E221929F27C0A0051A504 /* Patien.swift */,
 				111823C229ED2B640025B787 /* MedicalCardApp */,
 				111823C129ED2B640025B787 /* Products */,
 			);
@@ -64,9 +63,18 @@
 				937C7FFB29F0861200EB1F45 /* Aplications */,
 				937C7FFC29F0861E00EB1F45 /* ViewControllers */,
 				937C7FFD29F0862E00EB1F45 /* Storyboards */,
+				113E221B29F27C9D0051A504 /* Models */,
 				111823CC29ED2B650025B787 /* Assets.xcassets */,
 			);
 			path = MedicalCardApp;
+			sourceTree = "<group>";
+		};
+		113E221B29F27C9D0051A504 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				113E221929F27C0A0051A504 /* Patien.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		937C7FFB29F0861200EB1F45 /* Aplications */ = {
