@@ -13,6 +13,7 @@
 		111823CB29ED2B640025B787 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111823C929ED2B640025B787 /* Main.storyboard */; };
 		111823CD29ED2B650025B787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111823CC29ED2B650025B787 /* Assets.xcassets */; };
 		111823D029ED2B650025B787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111823CE29ED2B650025B787 /* LaunchScreen.storyboard */; };
+		113E221A29F27C0A0051A504 /* Patien.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113E221929F27C0A0051A504 /* Patien.swift */; };
 		937C7FFF29F0865600EB1F45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C7FFE29F0865600EB1F45 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		111823CC29ED2B650025B787 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		111823CF29ED2B650025B787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		111823D129ED2B650025B787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		113E221929F27C0A0051A504 /* Patien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patien.swift; sourceTree = "<group>"; };
 		937C7FFE29F0865600EB1F45 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -42,6 +44,7 @@
 		111823B729ED2B640025B787 = {
 			isa = PBXGroup;
 			children = (
+				113E221929F27C0A0051A504 /* Patien.swift */,
 				111823C229ED2B640025B787 /* MedicalCardApp */,
 				111823C129ED2B640025B787 /* Products */,
 			);
@@ -167,6 +170,7 @@
 			files = (
 				111823C829ED2B640025B787 /* AuthorisationViewController.swift in Sources */,
 				111823C429ED2B640025B787 /* AppDelegate.swift in Sources */,
+				113E221A29F27C0A0051A504 /* Patien.swift in Sources */,
 				111823C629ED2B640025B787 /* SceneDelegate.swift in Sources */,
 				937C7FFF29F0865600EB1F45 /* MainViewController.swift in Sources */,
 			);
