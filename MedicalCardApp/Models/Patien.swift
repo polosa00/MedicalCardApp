@@ -15,7 +15,7 @@ struct Patient {
     }
     
     let visitorHistory: VisitorHistory
-    let diagnosis: Diagnosis
+    let diagnosis: [Diagnos]
     let recipes: [Recipes]
     let analysis: [Analysis]
     let allergy: [Allergy]
@@ -43,7 +43,7 @@ struct Doctor {
     }
 }
 
-struct Diagnosis {
+struct Diagnos {
     let diagnos: String
     let doctor: Doctor
     let nameOfDoctor: Doctor
