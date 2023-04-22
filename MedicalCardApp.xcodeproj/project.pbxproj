@@ -14,6 +14,7 @@
 		111823CD29ED2B650025B787 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 111823CC29ED2B650025B787 /* Assets.xcassets */; };
 		111823D029ED2B650025B787 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111823CE29ED2B650025B787 /* LaunchScreen.storyboard */; };
 		937C7FFF29F0865600EB1F45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C7FFE29F0865600EB1F45 /* MainViewController.swift */; };
+		937C800129F1D00B00EB1F45 /* HistoryOfVisitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C800029F1D00B00EB1F45 /* HistoryOfVisitsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		111823CF29ED2B650025B787 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		111823D129ED2B650025B787 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		937C7FFE29F0865600EB1F45 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		937C800029F1D00B00EB1F45 /* HistoryOfVisitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOfVisitsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +60,20 @@
 		111823C229ED2B640025B787 /* MedicalCardApp */ = {
 			isa = PBXGroup;
 			children = (
+				936F72A129F28C1200DF8A2C /* Models */,
 				937C7FFB29F0861200EB1F45 /* Aplications */,
 				937C7FFC29F0861E00EB1F45 /* ViewControllers */,
 				937C7FFD29F0862E00EB1F45 /* Storyboards */,
 				111823CC29ED2B650025B787 /* Assets.xcassets */,
 			);
 			path = MedicalCardApp;
+			sourceTree = "<group>";
+		};
+		936F72A129F28C1200DF8A2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		937C7FFB29F0861200EB1F45 /* Aplications */ = {
@@ -81,6 +91,7 @@
 			children = (
 				111823C729ED2B640025B787 /* AuthorisationViewController.swift */,
 				937C7FFE29F0865600EB1F45 /* MainViewController.swift */,
+				937C800029F1D00B00EB1F45 /* HistoryOfVisitsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -166,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				111823C829ED2B640025B787 /* AuthorisationViewController.swift in Sources */,
+				937C800129F1D00B00EB1F45 /* HistoryOfVisitsViewController.swift in Sources */,
 				111823C429ED2B640025B787 /* AppDelegate.swift in Sources */,
 				111823C629ED2B640025B787 /* SceneDelegate.swift in Sources */,
 				937C7FFF29F0865600EB1F45 /* MainViewController.swift in Sources */,
@@ -315,7 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JXRD2AKBWK;
+				DEVELOPMENT_TEAM = 7PMP3UQ276;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MedicalCardApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -346,7 +358,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JXRD2AKBWK;
+				DEVELOPMENT_TEAM = 7PMP3UQ276;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MedicalCardApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

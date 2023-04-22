@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q9N-rr-b2V">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -9,46 +9,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Authorisation View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="AuthorisationViewController" customModule="MedicalCardApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="47" y="4"/>
-        </scene>
         <!--Главная-->
         <scene sceneID="Do6-TM-vhc">
             <objects>
                 <viewController id="4X2-vg-AXQ" customClass="MainViewController" customModule="MedicalCardApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ctL-Jw-wzz">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Bvb-JU-SGS">
-                                <rect key="frame" x="20" y="482" width="353" height="279"/>
+                                <rect key="frame" x="20" y="325" width="280" height="186"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLm-o0-y03">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="60.666666666666664"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="37.5"/>
                                         <color key="backgroundColor" red="0.40392160420000001" green="0.70980393890000004" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title=" История посещения">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="uD3-2N-cWl" kind="show" id="LeT-7N-e7z"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gIE-b0-Mbr">
-                                        <rect key="frame" x="0.0" y="72.666666666666629" width="353" height="61"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="280" height="37.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fWF-PI-jfv">
-                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="61"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="37.5"/>
                                                 <color key="backgroundColor" red="0.3058823645" green="0.62745100259999997" blue="0.76470589639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Диагнозы">
@@ -57,7 +45,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3W-w2-djn">
-                                                <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="61"/>
+                                                <rect key="frame" x="144" y="0.0" width="136" height="37.5"/>
                                                 <color key="backgroundColor" red="0.3058823645" green="0.62745100259999997" blue="0.76470589639999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Рецепты">
@@ -68,10 +56,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2oz-ed-ZL9">
-                                        <rect key="frame" x="0.0" y="145.66666666666663" width="353" height="60.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="99" width="280" height="37.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXh-xv-1ci">
-                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="60.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="37.5"/>
                                                 <color key="backgroundColor" red="0.19215688110000001" green="0.53725492949999998" blue="0.68235301969999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Анализы">
@@ -80,7 +68,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67j-Oo-UsC">
-                                                <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="60.666666666666664"/>
+                                                <rect key="frame" x="144" y="0.0" width="136" height="37.5"/>
                                                 <color key="backgroundColor" red="0.19215688110000001" green="0.53725492949999998" blue="0.68235301969999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Диагностика">
@@ -91,10 +79,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t8H-pY-cTj">
-                                        <rect key="frame" x="0.0" y="218.33333333333337" width="353" height="60.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="148.5" width="280" height="37.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rj0-bH-XzX">
-                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="60.666666666666664"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="136" height="37.5"/>
                                                 <color key="backgroundColor" red="0.066666662690000003" green="0.43921568989999998" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Аллергия">
@@ -103,7 +91,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUo-3w-QeN">
-                                                <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="60.666666666666664"/>
+                                                <rect key="frame" x="144" y="0.0" width="136" height="37.5"/>
                                                 <color key="backgroundColor" red="0.066666662690000003" green="0.43921568989999998" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Прививки">
@@ -115,29 +103,29 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vQv-kB-tSq">
-                                <rect key="frame" x="127.66666666666667" y="110.99999999999999" width="137.66666666666663" height="137.66666666666663"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timcook" translatesAutoresizingMaskIntoConstraints="NO" id="vQv-kB-tSq">
+                                <rect key="frame" x="104" y="72" width="112" height="112"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vQv-kB-tSq" secondAttribute="height" multiplier="1:1" id="QsX-KX-TX7"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="yMg-BE-My2">
-                                <rect key="frame" x="80.333333333333329" y="278.66666666666669" width="232.66666666666669" height="102.33333333333331"/>
+                                <rect key="frame" x="43.5" y="214" width="233" height="102.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Иванов Иван Иванович" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JWC-Ka-eNx">
-                                        <rect key="frame" x="0.0" y="0.0" width="232.66666666666666" height="26.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="233" height="26.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="г. Минск" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-gA-02n">
-                                        <rect key="frame" x="0.0" y="40.333333333333314" width="232.66666666666666" height="24"/>
+                                        <rect key="frame" x="0.0" y="40.5" width="233" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1-я ЦРП г. Минска" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2YR-km-ILn">
-                                        <rect key="frame" x="0.0" y="78.333333333333314" width="232.66666666666666" height="24"/>
+                                        <rect key="frame" x="0.0" y="78.5" width="233" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -164,7 +152,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Lq-xs-Grw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2190" y="2"/>
+            <point key="canvasLocation" x="2235" y="2"/>
+        </scene>
+        <!--История посещений-->
+        <scene sceneID="5no-1J-IPH">
+            <objects>
+                <tableViewController id="uD3-2N-cWl" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="4aY-md-1LV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" id="9sr-0d-AgR">
+                                <rect key="frame" x="0.0" y="50" width="320" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9sr-0d-AgR" id="Nfb-Ij-gjs">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="uD3-2N-cWl" id="hQE-1y-Bpf"/>
+                            <outlet property="delegate" destination="uD3-2N-cWl" id="MQz-dt-ozP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="История посещений" id="0f4-XV-nqa"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fwG-3g-bjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2989" y="1"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MSL-ZN-OnF">
@@ -172,7 +189,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="q9N-rr-b2V" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dxI-1P-cPe">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -191,6 +208,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Gve-Sp-Wlb"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rwp-Es-0Zy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -205,6 +223,7 @@
     </scenes>
     <resources>
         <image name="person.crop.square" catalog="system" width="128" height="114"/>
+        <image name="timcook" width="674" height="670"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
